@@ -46,7 +46,7 @@ jobs:
           sudo docker pull Maltassarus/infra_actions
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 Maltassarus/infra_actions
+          sudo docker run --rm -d -p 5000:5000 maltassarus/infra_actions
   send_message:
     runs-on: ubuntu-latest
     needs: deploy
